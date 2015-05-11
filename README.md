@@ -62,9 +62,11 @@ For Example : When node observes the messages of interest it consumes it by disp
 "Happy to find the message of interest("TAG"), consuming it" and when message of no interest ("TAG") arrived the 
 node publishes message to the log that states, "Message of not interest, forwarding to other nodes".
 
-Routing Table:  Every Service which connects with the nodes, mantains their ID, IP to hashtable and passes this routing information to the all nodes, however, not creating the redundant routing information to each node connected to it. Each node connected to same service, will *NOT* have same routing table information.
+Routing Table:  Every Service which connects with the nodes, maintains their ID, IP to hashtable and passes this routing information to the all nodes, however, not creating the redundant routing information to each node connected to it. Each node connected to same service, will *NOT* have same routing table information.
 
 
 Test:  Yes, I have tested the application on the distributed systems of six computers at home, where different connectivity pattern were tested, hybrid (where one service connected to one or more nodes), chain of connected nodes( each having its own service program connection).
+
+Features to be added: Acknowledgement of the messages and using the JSON to forward the message. 
 
 Conclusion : Peer to Peer Chat program is ready to use, although little more enhancement can be done, if time permits will add all new features and will update. Not completely modelled on Pastry, however, could be regarded as sub-pastry P2P implementation. 
